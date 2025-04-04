@@ -23,11 +23,18 @@ namespace Project01.Controllers
             return result;
         }
 
+        //public JsonResult ShowwJson()
+        //{
+        //    JsonResult jsonResult = new JsonResult(new {Id =20 , Name = "hassan"});
+        //    return jsonResult;  
+
+        //}
+
         public JsonResult ShowwJson()
         {
-            JsonResult jsonResult = new JsonResult(new {Id =20 , Name = "hassan"});
-            return jsonResult;  
-            
+            JsonResult jsonResult = new JsonResult(new { Id = 20, Name = "hassan" });
+            return jsonResult;
+
         }
         public IStatusCodeActionResult ShowRE(int id)
         {
