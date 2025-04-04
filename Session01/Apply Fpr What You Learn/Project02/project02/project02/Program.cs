@@ -48,6 +48,12 @@ namespace project02
             // خلي بالك منعني علامه الاستفهام الي جمب 
             //ID 
             // بتعرفك انها optional       عادي تدخلها وعادي لا 
+
+
+
+            app.MapControllerRoute(name: "First",
+                                   pattern : "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
+                                   defaults: new { Controller ="ViewContllorer",action = "GetAction" }); 
             #endregion
 
             #endregion
