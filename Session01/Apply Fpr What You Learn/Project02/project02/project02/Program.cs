@@ -18,6 +18,7 @@ namespace project02
             app.MapGet("/", () => "Hello World!");
 
             #endregion
+
             #region Variable SEGMENTS
             app.MapGet("/{name}", async Hesham =>
             {
@@ -25,6 +26,13 @@ namespace project02
              await  Hesham.Response.WriteAsync($"Hello {Name}");
             });
 
+            #endregion
+
+            #region Mixed Segment
+            app.MapGet("/X{name}", async Hesam =>
+            {
+                await Hesam.Response.WriteAsync($"Hello {Hesam.Request.RouteValues["name"]}");
+            });
             #endregion
 
             #endregion
