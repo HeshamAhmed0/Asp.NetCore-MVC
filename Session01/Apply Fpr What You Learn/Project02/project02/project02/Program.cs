@@ -19,10 +19,10 @@ namespace project02
 
             #endregion
             #region Variable SEGMENTS
-            app.MapGet("/{name}", async context =>
+            app.MapGet("/{name}", async Hesham =>
             {
-                var Name = context.GetRouteValue("name");
-                await context.Response.WriteAsync($"Hello {Name}");
+                var Name = Hesham.GetRouteValue("name");
+             await  Hesham.Response.WriteAsync($"Hello {Name}");
             });
 
             #endregion
