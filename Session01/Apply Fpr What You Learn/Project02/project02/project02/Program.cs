@@ -52,7 +52,7 @@ namespace project02
 
 
             app.MapControllerRoute(name: "First",
-                                   pattern : "/{Controller}/{action}/{Id:regex(^\\d{{7}}$)?}",
+                                   pattern : "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
                                    defaults: new { Controller ="ViewContllorer",action = "GetAction" }); 
             #endregion
 
