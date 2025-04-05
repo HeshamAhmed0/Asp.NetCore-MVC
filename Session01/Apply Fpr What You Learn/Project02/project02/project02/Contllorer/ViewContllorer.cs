@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using project02.Models;
 
 namespace project02.Contllorer
 {
@@ -25,6 +26,12 @@ namespace project02.Contllorer
                 return Content($"Name ={Name} Id ={Id}");
         }
 
+        [HttpPost]
+        public IActionResult TestModelBinding(int? Id ,string Name)
+        {
+            return Content($"Hello {Name} Youir Id is {Id}");
+        }
+
         #region Test Redirection
         //public IActionResult TestRedirectio()
         //{
@@ -41,6 +48,10 @@ namespace project02.Contllorer
         //} 
         #endregion
 
-
+        [HttpGet]
+        public IActionResult AddMovie(string Title ,Movie movie, int? Id )
+        {
+            return Content($"Movie Name : {movie.Title} , Movie Id : {movie.Id} , Id : {Id} , Title : {Title}");
+        }
     }
 }
