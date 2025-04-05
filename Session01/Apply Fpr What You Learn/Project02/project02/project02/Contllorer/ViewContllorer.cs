@@ -24,11 +24,23 @@ namespace project02.Contllorer
             else
                 return Content($"Name ={Name} Id ={Id}");
         }
-        public IActionResult TestRedirectio()
-        {
-            return RedirectToRoute("First", new { Controller = "ViewContllorer", action = "GetREquest", Id = 30 });
-            //return Redirect("https://www.facebook.com/");
-            //return RedirectToAction(nameof(GetAction), new { Id = 10, Name = "hesham" });
-        }
+
+        #region Test Redirection
+        //public IActionResult TestRedirectio()
+        //{
+        //    return RedirectToRoute("First", new { Controller = "ViewContllorer", action = "GetREquest", Id = 30 });
+        //    //return Redirect("https://www.facebook.com/");
+        //    //return RedirectToAction(nameof(GetAction), new { Id = 10, Name = "hesham" });
+        //}
+
+        //public IActionResult Test()
+        //{
+        //    //return Redirect("https://www.aucegypt.edu/academics/free-english-courses");
+        //    //return RedirectToAction(nameof(GetREquest), new { Id =50});
+        //    //return RedirectToRoute("First", new { Controller = "ViewContllorer", action= "GetREquest" ,Id =50});
+        //} 
+        #endregion
+
+
     }
 }
