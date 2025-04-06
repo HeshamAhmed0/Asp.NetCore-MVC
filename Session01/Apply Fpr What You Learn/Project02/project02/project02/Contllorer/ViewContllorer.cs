@@ -27,10 +27,10 @@ namespace project02.Contllorer
         }
 
         [HttpPost]
-        public IActionResult TestModelBinding(int? Id ,string Name)
-        {
-            return Content($"Hello {Name} Youir Id is {Id}");
-        }
+        //public IActionResult TestModelBinding(int? Id ,string Name)
+        //{
+        //    return Content($"Hello {Name} Youir Id is {Id}");
+        //}
 
         #region Test Redirection
         //public IActionResult TestRedirectio()
