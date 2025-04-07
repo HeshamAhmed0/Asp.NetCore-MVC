@@ -51,9 +51,14 @@ namespace project02
 
 
 
-            app.MapControllerRoute(name: "First",
-                                   pattern : "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
-                                   defaults: new { Controller ="ViewContllorer",action = "GetAction" }); 
+            //app.MapControllerRoute(name: "First",
+            //                       pattern : "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
+            //                       defaults: new { Controller ="ViewContllorer",action = "GetAction" });
+
+            app.MapControllerRoute(name: "Default",
+                pattern :"/{controller}/{action}/{Name:alpha?}",
+                defaults: new {Controller= "ViewContllorer", action = "TestModelBinding" }
+                                   );
             #endregion
 
             #endregion
