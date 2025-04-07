@@ -26,7 +26,7 @@ namespace project02.Contllorer
                 return Content($"Name ={Name} Id ={Id}");
         }
 
-        [HttpPost]
+        //[HttpPost]
         public IActionResult TestModelBinding(int? Id, string Name)
         {
             return Content($"Hello {Name} Youir Id is {Id}");
