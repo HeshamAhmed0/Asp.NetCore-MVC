@@ -48,17 +48,18 @@ namespace project02
             // خلي بالك منعني علامه الاستفهام الي جمب 
             //ID 
             // بتعرفك انها optional       عادي تدخلها وعادي لا 
-
-
-
-            //app.MapControllerRoute(name: "First",
-            //                       pattern : "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
-            //                       defaults: new { Controller ="ViewContllorer",action = "GetAction" });
+                                    // if you make to default by default the frirst  will Run 
 
             app.MapControllerRoute(name: "Default",
-                pattern :"/{controller}/{action}/{Name:alpha?}",
-                defaults: new {Controller= "ViewContllorer", action = "TestModelBinding" }
-                                   );
+               pattern: "/{controller}/{action}/{Name:alpha?}",
+               defaults: new { Controller = "ViewContllorer", action = "TestModelBinding" }
+                                  );
+
+            app.MapControllerRoute(name: "First",
+                                   pattern: "/{Controller}/{action}/{Id:regex(^\\d{{2}}$)?}",
+                                   defaults: new { Controller = "ViewContllorer", action = "GetAction" });
+
+           
             #endregion
 
             #endregion
