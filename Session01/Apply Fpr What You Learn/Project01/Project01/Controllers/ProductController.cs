@@ -29,20 +29,20 @@ namespace Project01.Controllers
             return jsonResult;  
             
         }
-        public IStatusCodeActionResult ShowRE(int id)
-        {
-            if(id%2== 0)
-            {
-                ViewResult result = new ViewResult();
-                result.ViewName = "View1";
-                return result;
-            }
-            else
-            {
-                JsonResult jsonResult = new JsonResult(new { Id = 20, Name = "hassan" });
-                return jsonResult;
-            }
-        }
+        //public IStatusCodeActionResult ShowRE(int id)
+        //{
+        //    if(id%2== 0)
+        //    {
+        //        ViewResult result = new ViewResult();
+        //        result.ViewName = "View1";
+        //        return result;
+        //    }
+        //    else
+        //    {
+        //        JsonResult jsonResult = new JsonResult(new { Id = 20, Name = "hassan" });
+        //        return jsonResult;
+        //    }
+        //}
     }
 
 }
