@@ -5,14 +5,17 @@ namespace Project03
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var app = builder.Build();
+           
+            builder.Services.AddControllersWithViews();
 
-            app.MapGet("/", () => "Hello World!");
+            var app = builder.Build();
+            app.UseStaticFiles();
+            //app.MapGet("/", () => "Hello World!");
             app.MapControllerRoute(name: "Default",
                                    pattern: "{Controller}/{action}/{Id?}",
-                                   defaults: new { controller ="HomeController" , action = "ReturnResul" },
+                                   defaults: new { controller ="Home" , action = "Index" },
                                    constraints:new {Id= @"\d{2}"});
-
+            
             app.Run();
         }
     }
