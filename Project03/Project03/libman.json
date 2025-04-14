@@ -1,0 +1,21 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+    "libraries": [
+        {
+            "provider": "cdnjs",
+            "library": "bootstrap@5.3.3",
+            "destination": "WWWroot/lib/bootstrap/",
+            "files": [
+                "js/bootstrap.min.js",
+                "js/bootstrap.js",
+                "js/bootstrap.js.map",
+                "js/bootstrap.min.js.map",
+                "css/bootstrap.css",
+                "css/bootstrap.css.map",
+                "css/bootstrap.min.css",
+                "css/bootstrap.min.css.map"
+            ]
+        }
+    ]
+}
