@@ -4,13 +4,14 @@ namespace Project03.Controllers
 {
     public class HomeController : Controller
     {
-        public string ReturnResul(int id)
+        public IActionResult Index()
         {
-            if (id == 0)
-                return $"Id {id}";
-            else
-                return $"Id {id}";
+            return View();
         }
        
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }
