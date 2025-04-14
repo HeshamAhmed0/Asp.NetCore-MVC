@@ -4,7 +4,8 @@ namespace Session02.Controllers
 {
     public class ApplicationController :Controller
     {
-        public string GetAction(int? Id ,string Name)
+        [HttpPost]
+        public string GetAction([FromBody]int? Id ,[FromHeader]string Name)
         {
             return $"Id : {Id} , Name : {Name}";
         }

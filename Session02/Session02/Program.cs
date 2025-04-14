@@ -11,10 +11,10 @@ namespace Session02
 
             var app = builder.Build();
 
-            //app.MapGet("/",()=>$"Hello World");
+            //app.MapGet("/", () => $"Hello World");
             app.MapControllerRoute(name:"First",
-                                   pattern:"/{controller}/{action}/{Id?}",
-                                   defaults:new {Controller = "ApplicationController", action = "GetAction" });
+                                   pattern: "/{Controller}/{action}/{Id?}",
+                                   defaults:new {Controller = "Application", action = "GetAction" });
             app.Run();
         }
     }
