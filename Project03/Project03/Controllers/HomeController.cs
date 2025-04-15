@@ -13,7 +13,11 @@ namespace Project03.Controllers
         {
             return View();
         } 
-        public IActionResult About()
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
         {
             return View();
         }
