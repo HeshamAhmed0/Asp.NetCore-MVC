@@ -13,12 +13,18 @@
     <header>
         <center>
             <div class="mt-4">
-                <a href="/Home/Index" class=" btn btn-primary">Home</a>
+
+@*                 <a href="/Home/Index" class=" btn btn-primary">Home</a>
+ *@
+ <a class="btn bg-primary" asp-controller="Home" asp-action="Index">Home</a>
+
+
+
                 <a href="/Home/Privacy" class=" btn btn-warning">Privacy</a>
                 <a href="/Home/AboutUs" class=" btn btn-success">About Us</a>
                 <a href="/Home/ContactUs" class=" btn btn-secondary">Contact Us</a>
                 <a href="/AccountController1/SignIn" class=" btn btn-info">Sign In</a>
-                <a href="/Account/Register" class=" btn btn-danger">Register</a>
+                <a href="/AccountController1/Register" class=" btn btn-danger">Register</a>
             </div>
         </center>
     </header>
