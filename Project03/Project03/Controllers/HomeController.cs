@@ -12,6 +12,10 @@ namespace Project03.Controllers
         public IActionResult Privacy()
         {
             return View();
+        } 
+        public IActionResult About()
+        {
+            return View();
         }
     }
 }
