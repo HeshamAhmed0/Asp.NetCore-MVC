@@ -1,0 +1,38 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+    "libraries": [
+        {
+            "provider": "cdnjs",
+            "library": "bootstrap@5.3.3",
+            "destination": "lib/bootstrap/",
+            "files": [
+                "js/bootstrap.bundle.js",
+                "js/bootstrap.bundle.min.js.map",
+                "js/bootstrap.bundle.min.js",
+                "js/bootstrap.bundle.js.map",
+                "css/bootstrap.min.css.map",
+                "css/bootstrap.min.css",
+                "css/bootstrap.css.map",
+                "css/bootstrap.css"
+            ]
+        }
+    ,
+{
+  "provider": "cdnjs",
+  "library": "bootstrap@5.3.3",
+  "destination": "WWWroot/lib/bootstrap/",
+  "files": [
+    "js/bootstrap.min.js",
+    "css/bootstrap.css",
+    "css/bootstrap.css.map",
+    "css/bootstrap.min.css",
+    "css/bootstrap.min.css.map",
+    "js/bootstrap.bundle.js",
+    "js/bootstrap.bundle.js.map",
+    "js/bootstrap.bundle.min.js",
+    "js/bootstrap.bundle.min.js.map"
+  ]
+}
+]
+}
