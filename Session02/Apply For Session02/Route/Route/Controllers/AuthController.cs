@@ -4,7 +4,11 @@ namespace Route.Controllers
 {
     public class AuthController : Controller
     {
-        public IActionResult Index()
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+        public IActionResult Register()
         {
             return View();
         }
