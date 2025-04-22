@@ -16,12 +16,12 @@ namespace Project01.Controllers
             result.Content = "Hello Hesham";
             return result;
         }
-        //public ViewResult viewResult()
-        //{
-        //    ViewResult result = new ViewResult();
-        //    result.ViewName = "View1";
-        //    return result;
-        //}
+        public ViewResult viewResult()
+        {
+            ViewResult result = new ViewResult();
+            result.ViewName = "View1";
+            return result;
+        }
 
         public JsonResult ShowwJson()
         {
