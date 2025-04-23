@@ -15,7 +15,9 @@ namespace Demo.Controllers
 
         public IActionResult AllStudents()
         {
-            return View();
+            StudentList studentList = new StudentList();
+            List<Student> students =studentList.GetStudents();
+            return View("GetAllStudents", students);
         }
          
     }

@@ -24,7 +24,7 @@ namespace Demo
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Student}/{action=details}/{id=?}");
+                pattern: "{controller=Student}/{action=details}/{id=20}");
 
             app.Run();
         }
