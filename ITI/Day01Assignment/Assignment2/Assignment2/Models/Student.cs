@@ -1,4 +1,5 @@
-﻿namespace Assignment2.Models
+﻿
+namespace Assignment2.Models
 {
     public class Student
     {

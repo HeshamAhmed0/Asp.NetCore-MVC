@@ -1,9 +1,12 @@
-﻿
+﻿@* @model Assignment2.Models.Student
 <table class="table table-bordered">
-	@foreach(Student item in Model){
-		<td>@item.Name</td>
-		<td>@item.Id</td>
-		
+
+    @foreach(Student item in Model){
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Id</td>
+    </tr>
+
 	}
 </table>
-
+ *@
