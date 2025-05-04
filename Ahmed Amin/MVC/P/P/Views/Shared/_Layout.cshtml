@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/css/bootstrap.css" rel="stylesheet"/>
+</head>
+<body>
+
+    @*Start Header*@
+    <header>
+        <div class="mt-4">
+            <center>
+                <a class="btn btn-primary  " href="/Home/Index">Home</a>
+                <a class="btn btn-secondary  " href="/Home/AboutUs">About Us</a>
+                <a class="btn btn-danger  " href="/Home/ContactUs">Contact Us</a>
+                <a class="btn btn-success  " href="/Home/Privacy">Privacy</a>
+            </center>
+        </div>
+    </header>
+    @*End Header*@
+
+    <div>
+        @RenderBody()
+    </div>
+    
+
+    @*Start Foter*@
+    <footer>
+        <div class="mt-4">
+            <center>
+                <p>Copyright &copy; @DateTime.Now.Year</p>
+            </center>
+        </div>
+    </footer>
+    @*End foter*@
+</body>
+</html>

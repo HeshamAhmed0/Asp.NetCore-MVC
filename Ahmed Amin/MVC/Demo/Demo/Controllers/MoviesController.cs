@@ -21,20 +21,20 @@ namespace Demo.Controllers
 
 
 
-        public ActionResult GetMovie(int Id)
-        {
-           if (Id == 1)
-            {
-                return Content($"Welcome To Movie {Id}", "text/html");
-            }
-            else if (Id == 2)
-            {
-                return Redirect("https://chatgpt.com/");
-            }
-            else
-            {
-                return RedirectToAction("AddMovie", "Movies");
-            }
-        }
+        //public ActionResult GetMovie(int Id)
+        //{
+        //   if (Id == 1)
+        //    {
+        //        return Content($"Welcome To Movie {Id}", "text/html");
+        //    }
+        //    else if (Id == 2)
+        //    {
+        //        return Redirect("https://chatgpt.com/");
+        //    }
+        //    else
+        //    {
+        //        return RedirectToAction("AddMovie", "Movies");
+        //    }
+        //}
     }
 }
